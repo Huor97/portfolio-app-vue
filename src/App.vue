@@ -1,13 +1,10 @@
 <script setup lang="ts">
+import MenuNav from "./components/MenuNav.vue";
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold bg-[#1da1f2] text-white">
-    Hello world!34
-  </h1>
-  </div>
+  <MenuNav />
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 

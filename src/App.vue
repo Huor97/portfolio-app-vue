@@ -1,13 +1,10 @@
 <script setup lang="ts">
+import Experience from "./components/Experience.vue";
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold bg-[#1da1f2] text-white">
-    Hello world!34
-  </h1>
-  </div>
+  <Experience />
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 

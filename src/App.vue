@@ -1,5 +1,6 @@
 <script setup lang="ts">
 // import HelloWorld from './components/HelloWorld.vue'
+import IntroducMe from './components/IntroduceMe.vue'
 </script>
 
 <template>
@@ -8,6 +9,7 @@
     Hello world!34
   </h1>
   </div>
+  <IntroducMe />
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { Color, InstancedBufferAttribute , MathUtils, Object3D, Vector3 } from 'three';
   
   import {

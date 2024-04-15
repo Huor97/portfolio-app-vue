@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex justify-center flex-col items-center">
+  <div class="bg-[#000] flex justify-center flex-col items-center">
     <div class="relative top-12">
       <h1 class="lg:text-[120px] font-[Oswald] tracking-wide font-bold">
         <span class="stroke__projets p-[0.2em]">Projets</span>

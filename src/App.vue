@@ -1,25 +1,15 @@
 <script setup lang="ts">
+import MenuNav from "./components/MenuNav.vue";
+import IntroducMe from "./components/IntroduceMe.vue";
+import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
-// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
+  <MenuNav />
+  <IntroducMe />
+  <Project />
   <Experience />
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
-<!-- <style scoped>
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style> -->
+<style scoped></style>

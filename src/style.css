@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-    background-color: #000000;
+*, body{
+    background-color: black; /* a resudre le background color pour ne pas avoir les deux background color*/
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }

@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex justify-center">
+  <div class="flex justify-center bg-transparent">
     <div class="w-[80%] flex justify-center items-center">
       <div class="w-[80%]">
         <a href="/">

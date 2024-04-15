@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
+</script>
 
 <template>
-  <div class="relative ml-[10rem] mt-[270px]">
+  <BackgroundTreeSubSurface />
+
+  <div class="fixed bg-transparent top-0 z-[9999] ml-[10rem] mt-[270px]">
     <div>
       <span class="lg:leading-[1] tracking-wide">
         <div class="text-white font-[Montserrat] lg:text-[28px] font-thin">

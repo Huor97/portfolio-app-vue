@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex justify-center bg-transparent">
-    <div class="w-[80%] flex justify-center items-center">
+  <div class="absolute w-[100%] flex justify-center">
+    <div class="w-[85%] flex justify-center items-center">
       <div class="w-[80%]">
         <a href="/">
           <div class="w-[100px]">
@@ -12,7 +12,7 @@
         </a>
       </div>
       <div
-        class="text-white text-[28px] font-[Montserrat variable] tracking-wide font-thin flex justify-between"
+        class="text-white text-[28px] font-[Montserrat variable] tracking-wide font-thin"
       >
         <!-- menu -->
         <a

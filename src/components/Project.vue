@@ -28,9 +28,31 @@
           utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
           MongoDB et JWT/token.
         </p>
-        <div>
-          <a href="#" class="font-[Montserrat] mr-4">Site</a>
-          <a href="#" class="font-[Montserrat]">GitHub</a>
+        <div class="flex gap-[1em]">
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >Site
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >GitHub
+
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -47,9 +69,31 @@
           utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
           MongoDB et JWT/token.
         </p>
-        <div>
-          <a href="#" class="font-[Montserrat] mr-4">Site</a>
-          <a href="#" class="font-[Montserrat]">GitHub</a>
+        <div class="flex gap-[1em]">
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >Site
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >GitHub
+
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
       <div class="w-[855px]">
@@ -79,9 +123,31 @@
           utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
           MongoDB et JWT/token.
         </p>
-        <div>
-          <a href="#" class="font-[Montserrat] mr-4">Site</a>
-          <a href="#" class="font-[Montserrat]">GitHub</a>
+        <div class="flex gap-[1em]">
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >Site
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >GitHub
+
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -98,9 +164,31 @@
           utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
           MongoDB et JWT/token.
         </p>
-        <div>
-          <a href="#" class="font-[Montserrat] mr-4">Site</a>
-          <a href="#" class="font-[Montserrat]">GitHub</a>
+        <div class="flex gap-[1em]">
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >Site
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
+
+          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+            >GitHub
+
+            <svg width="14" height="14" view-box="0 0 14 14">
+              <path
+                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
+                fill="white"
+                stroke="white"
+                stroke-width="0.542084"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
       <div class="w-[855px]">

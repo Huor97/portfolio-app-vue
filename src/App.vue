@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import MenuNav from "./components/MenuNav.vue";
 // import HelloWorld from './components/HelloWorld.vue'
 import BackgroundTreeSubSurface from './components/BackgroundTreeSubSurface.vue'
 </script>
@@ -6,11 +7,10 @@ import BackgroundTreeSubSurface from './components/BackgroundTreeSubSurface.vue'
 <template>
 
     <BackgroundTreeSubSurface/>
-  <!-- <div>
-    <h1 class="text-3xl font-bold bg-[#1da1f2] text-white">
-    Hello world!34
-  </h1>
-  </div> -->
+
+
+  <MenuNav />
+
   <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 

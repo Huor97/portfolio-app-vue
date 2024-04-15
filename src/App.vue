@@ -2,12 +2,14 @@
 import MenuNav from "./components/MenuNav.vue";
 import IntroducMe from "./components/IntroduceMe.vue";
 import Project from "./components/Project.vue";
+import Experience from "./components/Experience.vue";
 </script>
 
 <template>
   <MenuNav />
   <IntroducMe />
   <Project />
+  <Experience />
 </template>
 
 <style scoped></style>

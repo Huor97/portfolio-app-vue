@@ -8,7 +8,11 @@ This template should help get you started developing with Vue 3 and TypeScript i
 
 - Use [vue-tsc](https://github.com/vuejs/language-tools/tree/master/packages/tsc) for performing the same type checking from the command line, or for generating d.ts files for SFCs.
 
+
+- [font used](https://fonts.google.com/selection/embed)
+=======
 ## parti 3D
 - tree
 - [troisJS](https://troisjs.github.io/guide/)
 - [chroma-js](https://www.npmjs.com/package/chroma-js)
+

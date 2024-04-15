@@ -1,8 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex justify-center flex-col items-center">
-    <div class="relative top-72">
+  <div class="bg-[#000] flex justify-center flex-col items-center">
+    <div class="relative mt-72">
       <p class="text-white text-[28px] font-[Montserrat] font-thin">
         travailler avec moi:
       </p>
@@ -15,9 +15,7 @@
       </h1>
     </div>
 
-    <div
-      class="text-white w-[1260px] flex justify-between relative mt-52 top-72"
-    >
+    <div class="text-white w-[1260px] flex justify-between relative mt-52">
       <div>
         <div
           class="font-[montserrat] border-solid border-b-2 border-b-white-500 mb-4"
@@ -82,8 +80,8 @@
         </div>
       </div>
     </div>
-    <div class="text-white font-thin relative top-80 mt-20">
-      <span>©Copyright 2024</span>
+    <div class="text-white font-thin relative mt-20">
+      <span>©Copyright 2024 Rouh</span>
     </div>
   </div>
 </template>

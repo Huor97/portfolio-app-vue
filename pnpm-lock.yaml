@@ -5,21 +5,21 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
-
-  eslint:
-    specifier: ^9.0.0
-    version: 9.0.0
-
   chroma-js:
     specifier: ^2.4.2
     version: 2.4.2
+  eslint:
+    specifier: ^9.0.0
+    version: 9.0.0
+  gsap-trial:
+    specifier: ^3.12.5
+    version: 3.12.5
   three:
     specifier: ^0.134.0
     version: 0.134.0
   troisjs:
     specifier: ^0.3.3
     version: 0.3.4
-
   vue:
     specifier: ^3.4.21
     version: 3.4.21(typescript@5.4.5)
@@ -1150,6 +1150,10 @@ packages:
 
   /graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
+    dev: false
+
+  /gsap-trial@3.12.5:
+    resolution: {integrity: sha512-Mdq2sLBq6rt9qje/MoF/hRa/xKfvKOUdllPouU2Fhz1K6mpCk0SOGBDhxCrOrJXZ4O7YFFRFVADKIJVeHdKA8A==}
     dev: false
 
   /has-flag@4.0.0:

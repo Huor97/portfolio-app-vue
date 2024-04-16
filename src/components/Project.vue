@@ -1,7 +1,34 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { onMounted, onUnmounted, ref } from "vue";
+import gsap from "gsap-trial";
+// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import ScrollSmoother from "gsap-trial/ScrollSmoother";
+
+const main = ref();
+let smoother;
+let ctx: gsap.Context | undefined;
+
+onMounted(() => {
+  // ctx est un context qui signifie un conteneur qui encapsule un ensemble d'animation
+  ctx = gsap.context(() => {
+    smoother = ScrollSmoother.create({
+      smooth: 2,
+      effects: true,
+    });
+  }, main.value);
+});
+
+onUnmounted(() => {
+  ctx?.revert();
+});
+</script>
 
 <template>
-  <div class="bg-[#000] flex justify-center flex-col items-center">
+  <div
+    id="smooth-wrapper"
+    ref="main"
+    class="bg-[#000] flex justify-center flex-col items-center"
+  >
     <div class="relative top-12">
       <h1 class="lg:text-[120px] font-[Oswald] tracking-wide font-bold">
         <span class="stroke__projets p-[0.2em]">Projets</span>

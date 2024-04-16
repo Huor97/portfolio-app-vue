@@ -6,8 +6,10 @@ import Experience from "./components/Experience.vue";
 import ContacteCompetences from "./components/ContacteCompetences.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 import gsap from "gsap-trial";
-// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import ScrollSmoother from "gsap-trial/ScrollSmoother";
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const main = ref();
 let smoother;
@@ -29,14 +31,11 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div id="smooth-wrapper" ref="main">
-    <MenuNav />
-    <IntroducMe />
-    <Project />
-    <Experience />
-    <ContacteCompetences />
-  </div>
-  <!-- <Competences /> -->
+  <MenuNav />
+  <IntroducMe />
+  <Project />
+  <Experience />
+  <ContacteCompetences />
 </template>
 
 <style scoped></style>

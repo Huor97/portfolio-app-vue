@@ -1,34 +1,7 @@
-<script setup lang="ts">
-import { onMounted, onUnmounted, ref } from "vue";
-import gsap from "gsap-trial";
-// import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
-import ScrollSmoother from "gsap-trial/ScrollSmoother";
-
-const main = ref();
-let smoother;
-let ctx: gsap.Context | undefined;
-
-onMounted(() => {
-  // ctx est un context qui signifie un conteneur qui encapsule un ensemble d'animation
-  ctx = gsap.context(() => {
-    smoother = ScrollSmoother.create({
-      smooth: 2,
-      effects: true,
-    });
-  }, main.value);
-});
-
-onUnmounted(() => {
-  ctx?.revert();
-});
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div
-    id="smooth-wrapper"
-    ref="main"
-    class="bg-[#000] flex justify-center flex-col items-center"
-  >
+  <div class="bg-[#000] flex justify-center flex-col items-center">
     <div class="relative top-12">
       <h1 class="lg:text-[120px] font-[Oswald] tracking-wide font-bold">
         <span class="stroke__projets p-[0.2em]">Projets</span>
@@ -36,15 +9,15 @@ onUnmounted(() => {
       </h1>
     </div>
 
-    <div class="w-[1260px] flex justify-center relative mt-40">
-      <div class="w-[855px]">
+    <div class="overflow-hidden w-[1260px] flex justify-center relative mt-40">
+      <div class="w-[855px] hover:scale-125 duration-700">
         <img
           src="../assets/images/vent-de-fleur.webp"
           alt="e-comerce vent de fleur"
         />
       </div>
 
-      <div class="w-[356px] ml-[30px] text-white">
+      <div data-speed="1.1" class="w-[356px] ml-[30px] text-white">
         <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
           Vente de fleurs
         </h2>

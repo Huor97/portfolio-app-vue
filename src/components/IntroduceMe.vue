@@ -5,7 +5,7 @@ import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
 <template>
   <BackgroundTreeSubSurface />
 
-  <div class="absolute bg-transparent top-0 z-[9999] ml-[10rem] mt-[270px]">
+  <div class="absolute bg-transparent z-40 top-0 ml-[10rem] mt-[270px]">
     <div>
       <span class="lg:leading-[1] tracking-wide">
         <div class="text-white font-[Montserrat] lg:text-[28px] font-thin">
@@ -20,7 +20,9 @@ import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
       <h1 class="font-[Oswald] lg:text-[120px] font-bold text-white">
         FULL-STACK
       </h1>
-      <h1 class="stroke__title font-[Oswald] lg:text-[120px] font-bold">
+      <h1
+        class="text-transparent stroke__title font-[Oswald] lg:text-[120px] font-bold"
+      >
         DÉVELOPPEUR
       </h1>
     </div>

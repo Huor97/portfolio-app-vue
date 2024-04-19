@@ -4,14 +4,16 @@ import IntroducMe from "./components/IntroduceMe.vue";
 import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
 import ContacteCompetences from "./components/ContacteCompetences.vue";
-import { onMounted, onUnmounted, ref } from "vue";
+import { onMounted, onUnmounted, ref, onBeforeUnmount } from "vue";
 import gsap from "gsap-trial";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import ScrollSmoother from "gsap-trial/ScrollSmoother";
+// import AnimatedCursor from "./components/AnimatedCursor.vue";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 const main = ref();
+
 let smoother;
 let ctx: gsap.Context | undefined;
 
@@ -31,11 +33,14 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <MenuNav />
-  <IntroducMe />
-  <Project />
-  <Experience />
-  <ContacteCompetences />
+  <div>
+    <!-- <AnimatedCursor /> -->
+    <MenuNav />
+    <IntroducMe />
+    <Project />
+    <Experience />
+    <ContacteCompetences />
+  </div>
 </template>
 
 <style scoped></style>

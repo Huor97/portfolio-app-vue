@@ -5,7 +5,7 @@
     <div class="w-[85%] flex justify-center items-center">
       <div class="w-[80%]">
         <a href="/">
-          <div class="w-[100px]">
+          <div class="max-sm:w-[50px] max-sm:mr-[3rem] w-[100px]">
             <!-- logo -->
             <img src="../assets/images/logoR.webp" alt="rouh logo" />
           </div>
@@ -16,12 +16,12 @@
       >
         <!-- menu -->
         <a
-          class="pr-10"
+          class="max-sm:pr-5 pr-10"
           href="https://www.linkedin.com/in/rouhkarimi/"
           target="_blank"
           >Linkedin</a
         ><a
-          class="pr-10"
+          class="max-sm:pr-5 pr-10"
           href="https://www.canva.com/design/DAF_GWis2H8/6WrkjXGE_fw8mZaM6DzLBg/view?utm_content=DAF_GWis2H8&utm_campaign=designshare&utm_medium=link&utm_source=editor"
           target="_blank"
           >CV</a
@@ -30,3 +30,4 @@
     </div>
   </div>
 </template>
+<style></style>

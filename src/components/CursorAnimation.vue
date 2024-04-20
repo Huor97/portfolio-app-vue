@@ -50,25 +50,29 @@ const handleMouseMove = (e: MouseEvent) => {
 
 onMounted(() => {
   // Vérifier si l'appareil est tactile
+  const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-  ctx = canvas.value!.getContext("2d")!;
-  canvas.value!.width = window.innerWidth;
-  canvas.value!.height = window.innerHeight;
+  if (!isTouchDevice) {
+    ctx = canvas.value!.getContext("2d")!;
+    canvas.value!.width = window.innerWidth;
+    canvas.value!.height = window.innerHeight;
 
-  window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", handleMouseMove);
 
-  window.addEventListener("resize", onResize);
+    window.addEventListener("resize", onResize);
 
-  nextTick(() => {
-    const elems = document.querySelectorAll("[data-hover]");
+    nextTick(() => {
+      const elems = document.querySelectorAll("[data-hover]");
 
-    elems.forEach((el) => {
-      el.addEventListener("mouseenter", () => enlargeCursor());
-      el.addEventListener("mouseleave", () => normalizeCursor());
+      elems.forEach((el) => {
+        el.addEventListener("mouseenter", () => enlargeCursor());
+        el.addEventListener("mouseleave", () => normalizeCursor());
+      });
     });
-  });
 
-  render();
+    render();
+  }
 });
 
 function handleResize() {

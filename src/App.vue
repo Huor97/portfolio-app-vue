@@ -1,28 +1,46 @@
 <script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
+import MenuNav from "./components/MenuNav.vue";
+import IntroducMe from "./components/IntroduceMe.vue";
+import Project from "./components/Project.vue";
+import Experience from "./components/Experience.vue";
+import ContacteCompetences from "./components/ContacteCompetences.vue";
+import { onMounted, onUnmounted, ref } from "vue";
+import CursorAnimation from "./components/CursorAnimation.vue";
+import gsap from "gsap-trial";
+import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+import ScrollSmoother from "gsap-trial/ScrollSmoother";
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+
+const main = ref();
+
+let smoother;
+let ctx: gsap.Context | undefined;
+
+onMounted(() => {
+  // ctx est un context qui signifie un conteneur qui encapsule un ensemble d'animation
+  ctx = gsap.context(() => {
+    smoother = ScrollSmoother.create({
+      smooth: 2,
+      effects: true,
+    });
+  }, main.value);
+});
+
+onUnmounted(() => {
+  ctx?.revert();
+});
 </script>
 
 <template>
   <div>
-    <h1 class="text-3xl font-bold bg-[#1da1f2] text-white">
-    Hello world!34
-  </h1>
+    <CursorAnimation />
+    <MenuNav />
+    <IntroducMe />
+    <Project />
+    <Experience />
+    <ContacteCompetences />
   </div>
-  <!-- <HelloWorld msg="Vite + Vue" /> -->
 </template>
 
-<!-- <style scoped>
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style> -->
+<style scoped></style>

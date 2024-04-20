@@ -23,6 +23,8 @@
     "vue-lodash": "^2.1.2"
   },
   "devDependencies": {
+    "@types/chroma-js": "^2.4.4",
+    "@types/three": "^0.163.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",

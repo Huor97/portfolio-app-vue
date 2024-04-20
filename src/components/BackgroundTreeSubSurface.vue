@@ -1,10 +1,11 @@
-<script lang="ts">
+<script setup lang="ts">
 import {
   Color,
   InstancedBufferAttribute,
   MathUtils,
   Object3D,
   Vector3,
+  //@ts-ignore
 } from "three";
 
 import {
@@ -20,117 +21,102 @@ import {
   Scene,
   UnrealBloomPass,
 } from "troisjs";
-
+//@ts-ignore
 import chroma from "chroma-js";
+import { Ref, onMounted, ref } from "vue";
 
 const { randFloat: rnd, randFloatSpread: rndFS } = MathUtils;
 
-export default {
-  components: {
-    Camera,
-    DodecahedronGeometry,
-    EffectComposer,
-    FXAAPass,
-    InstancedMesh,
-    PointLight,
-    Renderer,
-    RenderPass,
-    SubSurfaceMaterial,
-    Scene,
-    UnrealBloomPass,
-  },
-  setup() {
-    const NUM_INSTANCES = 2000;
-    const instances = [];
-    const cscale = chroma.scale(["#dd3e1b", "#0b509c"]);
-    const target = new Vector3();
-    const dummyO = new Object3D();
-    const dummyV = new Vector3();
+const NUM_INSTANCES = 2000;
+//@ts-ignore
+const instances = [];
+const cscale = chroma.scale(["#dd3e1b", "#0b509c"]);
+const target = new Vector3();
+const dummyO = new Object3D();
+const dummyV = new Vector3();
 
-    for (let i = 0; i < NUM_INSTANCES; i++) {
-      instances.push({
-        position: new Vector3(rndFS(200), rndFS(200), rndFS(200)),
-        scale: rnd(0.2, 1),
-        velocity: new Vector3(rndFS(2), rndFS(2), rndFS(2)),
-        attraction: 0.0025 + rnd(0, 0.01),
-        vlimit: 0.3 + rnd(0, 0.2),
-      });
-    }
+for (let i = 0; i < NUM_INSTANCES; i++) {
+  instances.push({
+    position: new Vector3(rndFS(200), rndFS(200), rndFS(200)),
+    scale: rnd(0.2, 1),
+    velocity: new Vector3(rndFS(2), rndFS(2), rndFS(2)),
+    attraction: 0.0025 + rnd(0, 0.01),
+    vlimit: 0.3 + rnd(0, 0.2),
+  });
+}
 
-    return {
-      NUM_INSTANCES,
-      instances,
-      cscale,
-      target,
-      dummyO,
-      dummyV,
-    };
-  },
-  mounted() {
-    this.renderer = this.$refs.renderer;
-    this.imesh = this.$refs.imesh.mesh;
-    this.light = this.$refs.light.light;
-    this.init();
-  },
-  methods: {
-    init() {
-      // init instanced mesh matrix
-      for (let i = 0; i < this.NUM_INSTANCES; i++) {
-        const { position, scale } = this.instances[i];
-        this.dummyO.position.copy(position);
-        this.dummyO.scale.set(scale, scale, scale);
-        this.dummyO.updateMatrix();
-        this.imesh.setMatrixAt(i, this.dummyO.matrix);
-      }
-      this.updateColors();
-      this.imesh.instanceMatrix.needsUpdate = true;
+const renderer: Ref<typeof Renderer | null> = ref(null);
+const imesh: Ref<typeof InstancedMesh | null> = ref(null);
+const light: Ref<typeof PointLight | null> = ref(null);
 
-      // animate
-      this.renderer.onBeforeRender(this.animate);
-    },
-    animate() {
-      const { pointer } = this.renderer.three;
-      this.target.copy(pointer.positionV3);
-      this.light.position.copy(this.target);
+onMounted(() => {
+  init();
+});
 
-      for (let i = 0; i < this.NUM_INSTANCES; i++) {
-        const { position, scale, velocity, attraction, vlimit } =
-          this.instances[i];
+function init() {
+  // init instanced mesh matrix
+  for (let i = 0; i < NUM_INSTANCES; i++) {
+    //@ts-ignore
+    const { position, scale } = instances[i];
+    dummyO.position.copy(position);
+    dummyO.scale.set(scale, scale, scale);
+    dummyO.updateMatrix();
+    imesh.value?.mesh.setMatrixAt(i, dummyO.matrix);
+  }
+  updateColors();
+  if (imesh.value) {
+    imesh.value.mesh.instanceMatrix.needsUpdate = true;
+  } else {
+    console.error(
+      "Failed to update instance matrix: 'imesh' is null. Ensure that 'imesh' is correctly initialized and assigned."
+    );
+  }
 
-        this.dummyV
-          .copy(this.target)
-          .sub(position)
-          .normalize()
-          .multiplyScalar(attraction);
-        velocity.add(this.dummyV).clampScalar(-vlimit, vlimit);
-        position.add(velocity);
+  // animate
+  if (renderer.value) {
+    renderer.value.onBeforeRender(animate);
+  } else {
+    console.error(
+      "Renderer is not initialized. Ensure that the renderer is properly created and assigned before calling onBeforeRender."
+    );
+  }
+}
 
-        this.dummyO.position.copy(position);
-        this.dummyO.scale.set(scale, scale, scale);
-        this.dummyO.lookAt(this.dummyV.copy(position).add(velocity));
-        this.dummyO.updateMatrix();
-        this.imesh.setMatrixAt(i, this.dummyO.matrix);
-      }
-      this.imesh.instanceMatrix.needsUpdate = true;
-    },
-    //   randomColors() {
-    //     const c1 = chroma.random(), c2 = chroma.random();
-    //     this.cscale = chroma.scale([c1, c2]);
-    //     this.updateColors();
-    //   },
-    updateColors() {
-      const colors = [];
-      for (let i = 0; i < this.NUM_INSTANCES; i++) {
-        const color = new Color(this.cscale(rnd(0, 1)).hex());
-        colors.push(color.r, color.g, color.b);
-      }
-      this.imesh.geometry.setAttribute(
-        "color",
-        new InstancedBufferAttribute(new Float32Array(colors), 3)
-      );
-    },
-  },
-};
+function animate() {
+  if (!renderer.value || !imesh.value || !light.value) return;
+
+  const { pointer } = renderer.value.three;
+  target.copy(pointer?.positionV3);
+  light.value.light.position.copy(target);
+
+  for (let i = 0; i < NUM_INSTANCES; i++) {
+    //@ts-ignore
+    const { position, scale, velocity, attraction, vlimit } = instances[i];
+
+    dummyV.copy(target).sub(position).normalize().multiplyScalar(attraction);
+    velocity.add(dummyV).clampScalar(-vlimit, vlimit);
+    position.add(velocity);
+
+    dummyO.position.copy(position);
+    dummyO.scale.set(scale, scale, scale);
+    dummyO.lookAt(dummyV.copy(position).add(velocity));
+    dummyO.updateMatrix();
+    imesh.value.mesh.setMatrixAt(i, dummyO.matrix);
+  }
+  imesh.value.mesh.instanceMatrix.needsUpdate = true;
+}
+
+function updateColors() {
+  const colors = [];
+  for (let i = 0; i < NUM_INSTANCES; i++) {
+    const color = new Color(cscale(rnd(0, 1)).hex());
+    colors.push(color.r, color.g, color.b);
+  }
+  imesh.value?.mesh.geometry.setAttribute(
+    "color",
+    new InstancedBufferAttribute(new Float32Array(colors), 3)
+  );
+}
 </script>
 
 <template>

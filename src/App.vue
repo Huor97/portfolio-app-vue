@@ -12,19 +12,22 @@ import ScrollSmoother from "gsap-trial/ScrollSmoother";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-const main = ref();
+const main = ref<HTMLElement | null>(null);
 
-let smoother;
 let ctx: gsap.Context | undefined;
 
 onMounted(() => {
   // ctx est un context qui signifie un conteneur qui encapsule un ensemble d'animation
-  ctx = gsap.context(() => {
-    smoother = ScrollSmoother.create({
-      smooth: 2,
-      effects: true,
-    });
-  }, main.value);
+  if (main.value) {
+    ctx = gsap.context(() => {
+      ScrollSmoother.create({
+        smooth: 2,
+        effects: true,
+      });
+    }, main.value);
+  } else {
+    console.error("L'élément 'main' n'a pas été trouvé");
+  }
 });
 
 onUnmounted(() => {
@@ -33,7 +36,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div>
+  <div ref="main">
     <CursorAnimation />
     <MenuNav />
     <IntroducMe />

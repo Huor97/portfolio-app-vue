@@ -4,10 +4,14 @@
   <div class="absolute w-[100%] flex justify-center">
     <div class="w-[85%] flex justify-center items-center">
       <div class="w-[80%]">
-        <a data-hover="true" href="/">
+        <a href="/">
           <div class="max-sm:w-[50px] max-sm:mr-[3rem] w-[100px]">
             <!-- logo -->
-            <img src="../assets/images/R.svg" alt="rouh logo" />
+            <img
+              data-hover="true"
+              src="../assets/images/R.svg"
+              alt="rouh logo"
+            />
           </div>
         </a>
       </div>

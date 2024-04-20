@@ -43,6 +43,11 @@ const render = () => {
   animationFrameId = requestAnimationFrame(render);
 };
 
+const handleMouseMove = (e: MouseEvent) => {
+  mouseX = e.clientX;
+  mouseY = e.clientY;
+};
+
 onMounted(() => {
   // Vérifier si l'appareil est tactile
   const isTouchDevice =
@@ -53,10 +58,7 @@ onMounted(() => {
     canvas.value!.width = window.innerWidth;
     canvas.value!.height = window.innerHeight;
 
-    window.addEventListener("mousemove", (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
+    window.addEventListener("mousemove", handleMouseMove);
 
     window.addEventListener("resize", onResize);
 
@@ -84,10 +86,7 @@ function handleResize() {
 window.addEventListener("resize", handleResize);
 
 onBeforeUnmount(() => {
-  window.removeEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
+  window.removeEventListener("mousemove", handleMouseMove);
   window.removeEventListener("resize", handleResize);
   window.removeEventListener("resize", onResize);
   if (animationFrameId !== null) cancelAnimationFrame(animationFrameId);

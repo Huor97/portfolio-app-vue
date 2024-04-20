@@ -44,25 +44,33 @@ const render = () => {
 };
 
 onMounted(() => {
-  ctx = canvas.value!.getContext("2d")!;
-  canvas.value!.width = window.innerWidth;
-  canvas.value!.height = window.innerHeight;
+  // Vérifier si l'appareil est tactile
+  const isTouchDevice =
+    "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-  window.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-  window.addEventListener("resize", onResize);
+  if (!isTouchDevice) {
+    ctx = canvas.value!.getContext("2d")!;
+    canvas.value!.width = window.innerWidth;
+    canvas.value!.height = window.innerHeight;
 
-  nextTick(() => {
-    const elems = document.querySelectorAll("[data-hover]");
-
-    elems.forEach((el) => {
-      el.addEventListener("mouseenter", () => enlargeCursor());
-      el.addEventListener("mouseleave", () => normalizeCursor());
+    window.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
     });
-  });
-  render();
+
+    window.addEventListener("resize", onResize);
+
+    nextTick(() => {
+      const elems = document.querySelectorAll("[data-hover]");
+
+      elems.forEach((el) => {
+        el.addEventListener("mouseenter", () => enlargeCursor());
+        el.addEventListener("mouseleave", () => normalizeCursor());
+      });
+    });
+
+    render();
+  }
 });
 
 function handleResize() {

@@ -75,7 +75,11 @@ onMounted(() => {
           MongoDB et JWT/token.
         </p>
         <div class="flex gap-[1em]">
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://wonderflower.vercel.app/"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >Site
             <svg width="14" height="14" view-box="0 0 14 14">
               <path
@@ -87,7 +91,11 @@ onMounted(() => {
             </svg>
           </a>
 
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://github.com/adatechschool/projet_collectif_vente_de_fleurs-FRONTEND"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >GitHub
 
             <svg width="14" height="14" view-box="0 0 14 14">
@@ -110,7 +118,7 @@ onMounted(() => {
         class="max-sm:w-[425px] md:w-[500px] lg:w-[855px] hover:scale-125 duration-700"
       >
         <img
-          src="../assets/images/vent-de-fleur.webp"
+          src="../assets/images/suivi-de-cycle-menstruel.webp"
           alt="e-comerce vent de fleur"
         />
       </div>
@@ -120,29 +128,20 @@ onMounted(() => {
         class="lg:w-[356px] md:w-[250px] ml-[30px] text-white"
       >
         <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
-          Vente de fleurs
+          Suivi de cycle menstruel
         </h2>
         <p
           class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
         >
-          J’ai conçu et réalisé ce projet en équipe, en mode Agile/MVP. Le front
-          utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
-          MongoDB et JWT/token.
+          Cette application mobile est un projet d’équipe utilisant en front
+          React Native et en back PostgreSQL et une API, via Supabase.
         </p>
         <div class="flex gap-[1em]">
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
-            >Site
-            <svg width="14" height="14" view-box="0 0 14 14">
-              <path
-                d="M10.8101 1.96222L0.726954 12.0453L1.66171 12.9801L11.7448 2.89698L11.9344 9.4447L13.208 9.07311L13.0134 2.35278C12.9877 1.46249 12.2434 0.718185 11.3531 0.692412L4.80762 0.502924L4.43487 1.77539L10.8101 1.96222Z"
-                fill="white"
-                stroke="white"
-                stroke-width="0.542084"
-              ></path>
-            </svg>
-          </a>
-
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://github.com/adatechschool/NeverLeak_front"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >GitHub
 
             <svg width="14" height="14" view-box="0 0 14 14">
@@ -165,7 +164,7 @@ onMounted(() => {
         class="max-sm:w-[425px] md:w-[500px] lg:w-[855px] hover:scale-125 duration-700"
       >
         <img
-          src="../assets/images/vent-de-fleur.webp"
+          src="../assets/images/portfolio3d.webp"
           alt="e-comerce vent de fleur"
         />
       </div>
@@ -175,17 +174,20 @@ onMounted(() => {
         class="md:w-[250px] lg:w-[356px] ml-[30px] text-white"
       >
         <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
-          Vente de fleurs
+          Portfolio Parallaxe
         </h2>
         <p
           class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
         >
-          J’ai conçu et réalisé ce projet en équipe, en mode Agile/MVP. Le front
-          utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
-          MongoDB et JWT/token.
+          J'ai découvert puis utilisé React Drei et Three Fiber pour intégrer de
+          l'interactivité 3D de Three.js. Hébergé sur Vercel, bientôt sur AWS.
         </p>
         <div class="flex gap-[1em]">
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://portfolio-rouh.vercel.app/"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >Site
             <svg width="14" height="14" view-box="0 0 14 14">
               <path
@@ -197,7 +199,11 @@ onMounted(() => {
             </svg>
           </a>
 
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://github.com/Huor97/portfolio"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >GitHub
 
             <svg width="14" height="14" view-box="0 0 14 14">
@@ -220,7 +226,7 @@ onMounted(() => {
         class="max-sm:w-[425px] md:w-[500px] lg:w-[855px] hover:scale-125 duration-700"
       >
         <img
-          src="../assets/images/vent-de-fleur.webp"
+          src="../assets/images/portfolio1.webp"
           alt="e-comerce vent de fleur"
         />
       </div>
@@ -230,17 +236,20 @@ onMounted(() => {
         class="md:w-[250px] lg:w-[356px] ml-[30px] text-white"
       >
         <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
-          Vente de fleurs
+          Portfolio React
         </h2>
         <p
           class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
         >
-          J’ai conçu et réalisé ce projet en équipe, en mode Agile/MVP. Le front
-          utilise ReactJS, HTML, CSS (Tailwind CSS) et le back est en NodeJS,
-          MongoDB et JWT/token.
+          Mon premier portfolio responsive en React, GSAP, HTML, CSS(SCSS) sous
+          Vercel et incluant un formulaire de contact.
         </p>
         <div class="flex gap-[1em]">
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://portfolio-huor97.vercel.app/"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >Site
             <svg width="14" height="14" view-box="0 0 14 14">
               <path
@@ -252,7 +261,11 @@ onMounted(() => {
             </svg>
           </a>
 
-          <a href="#" class="font-[Montserrat] flex items-center gap-1"
+          <a
+            href="https://github.com/Huor97/portfolio"
+            target="_blank"
+            class="font-[Montserrat] flex items-center gap-1"
+            data-hover="true"
             >GitHub
 
             <svg width="14" height="14" view-box="0 0 14 14">

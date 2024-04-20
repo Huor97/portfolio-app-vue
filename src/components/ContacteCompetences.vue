@@ -12,7 +12,7 @@
         class="max-sm:text-[1.5rem] text-[3.75rem] text-white font-[Montserrat] tracking-wide"
       >
         <span
-          ><a href="mailto:karimi.rouh@proton.me "
+          ><a href="mailto:karimi.rouh@proton.me " data-hover="true"
             >karimi.rouh@proton.me</a
           ></span
         >

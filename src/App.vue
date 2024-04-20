@@ -4,11 +4,11 @@ import IntroducMe from "./components/IntroduceMe.vue";
 import Project from "./components/Project.vue";
 import Experience from "./components/Experience.vue";
 import ContacteCompetences from "./components/ContacteCompetences.vue";
-import { onMounted, onUnmounted, ref, onBeforeUnmount } from "vue";
+import { onMounted, onUnmounted, ref } from "vue";
+import CursorAnimation from "./components/CursorAnimation.vue";
 import gsap from "gsap-trial";
 import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
 import ScrollSmoother from "gsap-trial/ScrollSmoother";
-// import AnimatedCursor from "./components/AnimatedCursor.vue";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
@@ -34,7 +34,7 @@ onUnmounted(() => {
 
 <template>
   <div>
-    <!-- <AnimatedCursor /> -->
+    <CursorAnimation />
     <MenuNav />
     <IntroducMe />
     <Project />

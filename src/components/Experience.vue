@@ -104,7 +104,13 @@ onMounted(() => {
           class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
         >
           Développement de nouvelles fonctionnalités sur
-           https://jobs.makesense.org/fr
+          <a
+            data-hover="true"
+            href="https://jobs.makesense.org/fr"
+            target="_blank"
+          >
+             https://jobs.makesense.org/fr
+          </a>
         </p>
         <div>
           <ul>

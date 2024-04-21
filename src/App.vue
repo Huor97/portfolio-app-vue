@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import MenuNav from "./components/MenuNav.vue";
 import IntroducMe from "./components/IntroduceMe.vue";
-import Project from "./components/Project.vue";
-import Experience from "./components/Experience.vue";
+import Projects from "./components/Projects.vue";
+import Experiences from "./components/Experiences.vue";
 import ContacteCompetences from "./components/ContacteCompetences.vue";
 import { onMounted, onUnmounted, ref } from "vue";
 import CursorAnimation from "./components/CursorAnimation.vue";
@@ -40,8 +40,8 @@ onUnmounted(() => {
     <CursorAnimation />
     <MenuNav />
     <IntroducMe />
-    <Project />
-    <Experience />
+    <Projects />
+    <Experiences />
     <ContacteCompetences />
   </div>
 </template>

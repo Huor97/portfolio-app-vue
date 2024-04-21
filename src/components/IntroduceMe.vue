@@ -42,7 +42,7 @@ onMounted(() => {
       <span
         class="max-sm:text-[14px] max-sm:leading-[20px] text-[28px] text-white font-[Montserrat] font-thin tracking-wide"
       >
-        <div>Hello, Rouh</div>
+        <div>Hello, c'est Rouh</div>
       </span>
     </div>
     <div class="max-sm:leading-[80px] leading-[140px] tracking-wide">

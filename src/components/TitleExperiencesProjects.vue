@@ -4,10 +4,10 @@ import gsap from "gsap-trial";
 import ScrollTrigger from "gsap-trial/ScrollTrigger";
 import SplitText from "gsap-trial/SplitText";
 
-defineProps({
-  title1: String,
-  title2: String,
-});
+defineProps<{
+  title1: string;
+  title2: string;
+}>();
 
 gsap.registerPlugin(SplitText, ScrollTrigger);
 

@@ -45,42 +45,6 @@ onMounted(() => {
         <span class="stroke__projets">Experiences</span>
       </h1>
     </div>
-
-    <div
-      class="max-sm:flex-col max-sm:items-center lg:w-[1260px] flex justify-center relative mt-40"
-    >
-      <div class="w-[30%]">
-        <img
-          class="rounded-full w-[100%]"
-          src="../assets/images/helloGolf.jpg"
-          alt="e-comerce vent de fleur"
-        />
-      </div>
-
-      <div class="ml-[30px] text-white">
-        <span>Janvier - Mars 2022</span>
-        <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
-          Développeur
-        </h2>
-        <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
-          front end
-        </h2>
-        <p
-          class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
-        >
-          J'ai réalisé des pages du site e-commerce permettant la visualisation
-          des articles de golf.
-        </p>
-        <div>
-          <ul>
-            <li>ReactJS</li>
-            <li>Styled Components</li>
-            <li>API REST</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
     <div
       class="max-sm:flex-col max-sm:items-center lg:w-[1260px] flex justify-center relative mt-40"
     >
@@ -118,6 +82,41 @@ onMounted(() => {
             <li>NuxtJS</li>
             <li>VueX</li>
             <li>Firebase</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="max-sm:flex-col max-sm:items-center lg:w-[1260px] flex justify-center relative mt-40"
+    >
+      <div class="w-[30%]">
+        <img
+          class="rounded-full w-[100%]"
+          src="../assets/images/helloGolf.jpg"
+          alt="e-comerce vent de fleur"
+        />
+      </div>
+
+      <div class="ml-[30px] text-white">
+        <span>Janvier - Mars 2022</span>
+        <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
+          Développeur
+        </h2>
+        <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
+          front end
+        </h2>
+        <p
+          class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
+        >
+          J'ai réalisé des pages du site e-commerce permettant la visualisation
+          des articles de golf.
+        </p>
+        <div>
+          <ul>
+            <li>ReactJS</li>
+            <li>Styled Components</li>
+            <li>API REST</li>
           </ul>
         </div>
       </div>

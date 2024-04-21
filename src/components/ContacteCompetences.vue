@@ -93,7 +93,7 @@
     </div>
 
     <div class="text-white font-thin relative mt-20">
-      <span>©Copyright 2024 Rouh</span>
+      <span>© Copyright 2024 Rouh</span>
     </div>
   </div>
 </template>

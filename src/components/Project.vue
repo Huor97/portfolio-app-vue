@@ -180,7 +180,7 @@ onMounted(() => {
           class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2"
         >
           J'ai découvert puis utilisé React Drei et Three Fiber pour intégrer de
-          l'interactivité 3D de Three.js. Hébergé sur Vercel, bientôt sur AWS.
+          l'interactivité 3D de Three.js. Hébergé sur Vercel.
         </p>
         <div class="flex gap-[1em]">
           <a

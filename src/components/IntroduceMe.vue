@@ -40,29 +40,28 @@ onMounted(() => {
   >
     <div>
       <span
-        class="max-sm:text-[14px] max-sm:leading-[20px] text-[28px] text-white font-[Montserrat] font-thin leading-[1] tracking-wide"
+        class="max-sm:text-[14px] max-sm:leading-[20px] text-[28px] text-white font-[Montserrat] font-thin tracking-wide"
       >
-        <div>Hello</div>
-        <div>Je m'appelle Rouh</div>
+        <div>Hello, c'est Rouh</div>
       </span>
     </div>
-    <div class="max-sm:leading-[80px] leading-[150px] tracking-wide">
-      <h1
-        class="max-sm:text-[60px] text-[120px] font-[Oswald] font-bold text-white"
-      >
-        FULL-STACK
-      </h1>
+    <div class="max-sm:leading-[80px] leading-[140px] tracking-wide">
       <h1
         class="max-sm:text-[60px] text-[120px] text-transparent stroke__title font-[Oswald] font-bold"
       >
         DÉVELOPPEUR
+      </h1>
+      <h1
+        class="max-sm:text-[60px] text-[120px] font-[Oswald] font-bold text-white"
+      >
+        FULL STACK
       </h1>
     </div>
     <div
       class="max-sm:text-[14px] text-[28px] text-white font-[Montserrat] tracking-wide leading-[1.5] font-thin"
     >
       <div>
-        <span> J'aime programmer et résoudre des problèmes </span>
+        <span> J'aime programmer et résoudre des problèmes. </span>
       </div>
       <div>
         <span>

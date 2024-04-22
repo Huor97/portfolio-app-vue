@@ -18,7 +18,9 @@ defineProps({
       data-speed="1.1"
       class="bg-transparent md:w-[250px] lg:w-[356px] ml-[30px] text-white"
     >
-      <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
+      <h2
+        class="max-sm:text-[46px] text-[74px] leading-[74px] font-[Oswald] tracking-wide"
+      >
         {{ projet?.titre }}
       </h2>
       <p

@@ -27,7 +27,7 @@ const experiences = reactive([
 
 <template>
   <div class="bg-[#000] flex justify-center flex-col items-center">
-    <TitleExperiencesProjects title1="Mes" title2="Experiences" />
+    <TitleExperiencesProjects title1="Mes" title2="Expériences" />
 
     <template v-for="experience in experiences">
       <Experience :experience="experience" />

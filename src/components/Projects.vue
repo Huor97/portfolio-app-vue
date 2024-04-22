@@ -48,7 +48,7 @@ const projets = reactive([
   <div
     class="relative bg-transparent flex justify-center flex-col items-center"
   >
-    <TitleExperiencesProjects title1="Projets" title2="choisi" />
+    <TitleExperiencesProjects title1="Projets" title2="choisis" />
     <template v-for="projet in projets">
       <Project :projet="projet" />
     </template>

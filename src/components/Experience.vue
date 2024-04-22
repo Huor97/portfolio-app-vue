@@ -18,10 +18,14 @@ defineProps({
 
     <div class="ml-[30px] text-white">
       <span>{{ experience?.date }}</span>
-      <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
+      <h2
+        class="max-sm:text-[46px] text-[74px] leading-[74px] font-[Oswald] tracking-wide"
+      >
         Développeur
       </h2>
-      <h2 class="text-[74px] leading-[74px] font-[Oswald] tracking-wide">
+      <h2
+        class="max-sm:text-[46px] text-[74px] leading-[74px] font-[Oswald] tracking-wide"
+      >
         front end
       </h2>
       <p

@@ -1,41 +1,11 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
-import gsap from "gsap-trial";
-import SplitText from "gsap-trial/SplitText";
 import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
-
-gsap.registerPlugin(SplitText);
-
-const quote = ref();
-
-onMounted(() => {
-  const quoteEl = quote.value;
-  if (!quoteEl) return;
-
-  const mySplitText = new SplitText(quoteEl, { type: "words, chars" });
-  const chars = mySplitText.chars;
-
-  gsap.set(quoteEl, { perspective: 400 });
-
-  const tl = gsap.timeline();
-  tl.from(chars, {
-    duration: 1.3,
-    opacity: 0,
-    scale: 0,
-    y: 100,
-    rotateX: 180,
-    transformOrigin: "0% 50% -50",
-    ease: "back",
-    stagger: 0.01,
-  });
-});
 </script>
 
 <template>
   <BackgroundTreeSubSurface />
 
   <div
-    ref="quote"
     class="max-sm:p-3 max-sm:top-[-7rem] md:p-10 md:top-0 lg:top-0 absolute bg-transparent z-40 mt-[270px] lg:left-20"
   >
     <div>

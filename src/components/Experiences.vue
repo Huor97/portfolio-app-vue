@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 import Experience from "./Experience.vue";
+import iad from "../assets/images/iad.png";
 import jobs from "../assets/images/jobs.avif";
 import helloGolf from "../assets/images/helloGolf.jpg";
 import TitleExperiencesProjects from "./TitleExperiencesProjects.vue";
@@ -8,10 +9,17 @@ import TitleExperiencesProjects from "./TitleExperiencesProjects.vue";
 const experiences = reactive([
   {
     titre: "Développeur front end",
+    image: iad,
+    description: "Développement de nouvelles fonctionnalités au sein des équipes techniques d'iad Business Factory",
+    technologys: ["Vue3", "TypeScript", "Vue Query"],
+    date: "Avril 2024 - Mai 2025",
+  },
+  {
+    titre: "Développeur front end",
     image: jobs,
     description: "Développement de nouvelles fonctionnalités sur ",
     link: "https://jobs.makesense.org/fr",
-    technologys: ["VueJS", "NuxtJS", "VueX", "Firebase"],
+    technologys: ["VueJS", "VueX", "Firebase"],
     date: "Janvier - Mars 2024",
   },
   {

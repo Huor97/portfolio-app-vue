@@ -15,5 +15,3 @@ import CursorAnimation from "./components/CursorAnimation.vue";
   <Experiences />
   <ContacteCompetences />
 </template>
-
-<style scoped></style>

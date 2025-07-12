@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 import Project from "./Project.vue";
+import faverton from "../assets/images/faverton.png";
 import ventDeFleur from "../assets/images/vent-de-fleur.webp";
 import suiviDeCycleMenstruel from "../assets/images/suivi-de-cycle-menstruel.webp";
 import portfolio3D from "../assets/images/portfolio3d.webp";
@@ -8,6 +9,15 @@ import portfolio1 from "../assets/images/portfolio1.webp";
 import TitleExperiencesProjects from "./TitleExperiencesProjects.vue";
 
 const projets = reactive([
+  {
+    titre: "Faverton",
+    image: faverton,
+    description:
+      "Application d'évaluation de potentiel photovoltaïque. Outil accessible pour accélérer la transition énergétique. Nuxt 3, Supabase, Dockerisé. Suppression des données conforme au RGPD",
+    site: "https://favertons.favian.eu",
+    github:
+      "https://github.com/Huor97/faverton-app",
+  },
   {
     titre: "Vente de fleurs",
     image: ventDeFleur,
@@ -45,9 +55,7 @@ const projets = reactive([
 </script>
 
 <template>
-  <div
-    class="relative bg-transparent flex justify-center flex-col items-center"
-  >
+  <div class="relative bg-transparent flex justify-center flex-col items-center">
     <TitleExperiencesProjects title1="Projets" title2="choisis" />
     <template v-for="projet in projets">
       <Project :projet="projet" />

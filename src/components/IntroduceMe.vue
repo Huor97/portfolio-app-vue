@@ -6,30 +6,22 @@ import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
   <BackgroundTreeSubSurface />
 
   <div
-    class="max-sm:p-3 max-sm:top-[-7rem] md:p-10 md:top-0 lg:top-0 absolute bg-transparent z-40 mt-[270px] lg:left-20"
-  >
+    class="max-sm:p-3 max-sm:top-[-7rem] md:p-10 md:top-0 lg:top-0 absolute bg-transparent z-40 mt-[270px] lg:left-20">
     <div>
       <span
-        class="max-sm:text-[14px] max-sm:leading-[20px] text-[28px] text-white font-[Montserrat] font-thin tracking-wide"
-      >
+        class="max-sm:text-[14px] max-sm:leading-[20px] text-[28px] text-white font-[Montserrat] font-thin tracking-wide">
         <div>Hello, c'est Rouh</div>
       </span>
     </div>
     <div class="max-sm:leading-[80px] leading-[140px] tracking-wide">
-      <h1
-        class="max-sm:text-[60px] text-[120px] text-transparent stroke__title font-[Oswald] font-bold"
-      >
+      <h1 class="max-sm:text-[60px] text-[120px] text-transparent stroke__title font-[Oswald] font-bold">
         DÉVELOPPEUR
       </h1>
-      <h1
-        class="max-sm:text-[60px] text-[120px] font-[Oswald] font-bold text-white"
-      >
-        FULL STACK
+      <h1 class="max-sm:text-[60px] text-[120px] font-[Oswald] font-bold text-white">
+        FRONT-END
       </h1>
     </div>
-    <div
-      class="max-sm:text-[14px] text-[28px] text-white font-[Montserrat] tracking-wide leading-[1.5] font-thin"
-    >
+    <div class="max-sm:text-[14px] text-[28px] text-white font-[Montserrat] tracking-wide leading-[1.5] font-thin">
       <div>
         <span> J'aime programmer et résoudre des problèmes. </span>
       </div>

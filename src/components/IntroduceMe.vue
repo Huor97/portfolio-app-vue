@@ -18,7 +18,7 @@ import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
         DÉVELOPPEUR
       </h1>
       <h1 class="max-sm:text-[60px] text-[120px] font-[Oswald] font-bold text-white">
-        FRONT-END
+        Full Stack
       </h1>
     </div>
     <div class="max-sm:text-[14px] text-[28px] text-white font-[Montserrat] tracking-wide leading-[1.5] font-thin">

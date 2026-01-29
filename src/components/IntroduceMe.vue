@@ -15,10 +15,10 @@ import BackgroundTreeSubSurface from "./BackgroundTreeSubSurface.vue";
     </div>
     <div class="max-sm:leading-[80px] leading-[140px] tracking-wide">
       <h1 class="max-sm:text-[60px] text-[120px] text-transparent stroke__title font-[Oswald] font-bold">
-        DÉVELOPPEUR
+        INGÉNIEUR
       </h1>
       <h1 class="max-sm:text-[60px] text-[120px] font-[Oswald] font-bold text-white">
-        Full Stack
+        Front End
       </h1>
     </div>
     <div class="max-sm:text-[14px] text-[28px] text-white font-[Montserrat] tracking-wide leading-[1.5] font-thin">

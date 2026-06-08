@@ -120,8 +120,6 @@ function updateColors() {
 </script>
 
 <template>
-  <!-- <Renderer ref="renderer" resize="window" :orbit-ctrl="{ enableDamping: true, dampingFactor: 0.05 }" pointer @click="randomColors" > -->
-  <!-- <Renderer ref="renderer" resize="window" pointer @click="randomColors" > -->
   <Renderer ref="renderer" resize="window" pointer>
     <Camera :position="{ z: 300, x: -100 }" />
     <Scene>

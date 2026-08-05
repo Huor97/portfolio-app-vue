@@ -29,15 +29,8 @@ const newProjects = reactive([
 <template>
     <div class="relative bg-transparent flex justify-center flex-col items-center">
         <TitleExperiencesProjects title1="Projets" title2="actuels" />
-        <template v-for="projet in newProjects">
+        <template v-for="projet in newProjects" :key="projet.titre">
             <Project :projet="projet" />
         </template>
     </div>
 </template>
-
-<style>
-.stroke__projets {
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #ffffff;
-}
-</style>

@@ -7,7 +7,7 @@ defineProps({
 <template>
   <div class="max-sm:flex-col overflow-hidden lg:w-[1260px] flex justify-center relative mt-12">
     <div class="max-sm:w-[425px] md:w-[500px] lg:w-[855px] hover:scale-125 duration-700">
-      <img :src="projet?.image" alt="e-comerce vent de fleur" />
+      <img :src="projet?.image" :alt="projet?.titre || 'Illustration du projet'" />
     </div>
 
     <div data-speed="1.1" class="bg-transparent md:w-[250px] lg:w-[356px] ml-[30px] text-white">
@@ -18,7 +18,7 @@ defineProps({
         {{ projet?.description }}
       </p>
       <div class="flex gap-[1em]">
-        <a v-if="projet?.site != ''" :href="projet?.site" target="_blank"
+        <a v-if="projet?.site != ''" :href="projet?.site" target="_blank" rel="noopener noreferrer"
           class="font-[Montserrat] flex items-center gap-1" data-hover="true">Site
           <svg width="14" height="14" view-box="0 0 14 14">
             <path
@@ -27,7 +27,7 @@ defineProps({
           </svg>
         </a>
 
-        <a v-if="projet?.github != ''" :href="projet?.github" target="_blank"
+        <a v-if="projet?.github != ''" :href="projet?.github" target="_blank" rel="noopener noreferrer"
           class="font-[Montserrat] flex items-center gap-1" data-hover="true">GitHub
 
           <svg width="14" height="14" view-box="0 0 14 14">

@@ -7,7 +7,8 @@ defineProps({
 <template>
   <div class="max-sm:flex-col max-sm:items-center lg:w-[1260px] flex justify-center relative mt-12">
     <div class="w-[30%]">
-      <img class="rounded-full w-[100%]" :src="experience?.image" alt="e-comerce vent de fleur" />
+      <img class="rounded-full w-[100%]" :src="experience?.image"
+        :alt="experience?.titre || 'Illustration de l’expérience'" />
     </div>
 
     <div class="ml-[30px] text-white">
@@ -20,7 +21,7 @@ defineProps({
       </h2>
       <p class="max-sm:text-[18px] lg:text-[28px] font-[Montserrat] font-thin lg:leading-[1] pt-3 pb-2">
         {{ experience?.description }}
-        <a data-hover="true" :href="experience?.link" target="_blank">
+        <a data-hover="true" :href="experience?.link" target="_blank" rel="noopener noreferrer">
            {{ experience?.link }}
         </a>
       </p>

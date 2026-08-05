@@ -42,10 +42,3 @@ const experiences = reactive([
     </template>
   </div>
 </template>
-
-<style>
-.stroke__projets {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ffffff;
-}
-</style>

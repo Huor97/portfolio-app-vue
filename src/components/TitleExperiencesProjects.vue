@@ -13,3 +13,10 @@ defineProps<{
     </h1>
   </div>
 </template>
+
+<style scoped>
+.stroke__projets {
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ffffff;
+}
+</style>

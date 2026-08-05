@@ -47,15 +47,8 @@ const projetsPrecedent = reactive([
 <template>
   <div class="relative bg-transparent flex justify-center flex-col items-center">
     <TitleExperiencesProjects title1="Projets" title2="précédents" />
-    <template v-for="projet in projetsPrecedent">
+    <template v-for="projet in projetsPrecedent" :key="projet.titre">
       <Project :projet="projet" />
     </template>
   </div>
 </template>
-
-<style>
-.stroke__projets {
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #ffffff;
-}
-</style>

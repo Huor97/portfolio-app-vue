@@ -58,11 +58,6 @@ const competences = reactive([
 </template>
 
 <style>
-.stroke__projets {
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #ffffff;
-}
-
 .hover-2 {
   background: linear-gradient(#ffffff 0 0) no-repeat calc(0% - var(--p, 0%)) 100% / 100% var(--p, 0em);
   transition: 0.2s var(--t, 0s),
